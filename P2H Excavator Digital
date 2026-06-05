@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P2H Excavator Digital</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    margin:20px;
+    background:#f5f5f5;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border:2px solid #000;
+}
+
+h1{
+    text-align:center;
+    margin:0;
+}
+
+.header-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:20px;
+}
+
+.header-grid table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.header-grid td{
+    border:1px solid #000;
+    padding:8px;
+}
+
+.section-title{
+    background:#ddd;
+    font-weight:bold;
+    padding:8px;
+    margin-top:20px;
+    border:1px solid #000;
+}
+
+table.inspection{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table.inspection th,
+table.inspection td{
+    border:1px solid #000;
+    padding:5px;
+}
+
+table.inspection th{
+    background:#eee;
+}
+
+.note{
+    width:100%;
+}
+
+textarea{
+    width:100%;
+    height:100px;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    cursor:pointer;
+}
+
+@media print{
+    button{
+        display:none;
+    }
+
+    body{
+        background:white;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>FORM PELAKSANAAN PERAWATAN HARIAN</h1>
+<h2 style="text-align:center;">EXCAVATOR</h2>
+
+<div class="header-grid">
+
+<table>
+<tr>
+<td>Hari / Tanggal</td>
+<td><input type="date"></td>
+</tr>
+
+<tr>
+<td>Nama Siswa</td>
+<td><input type="text" style="width:100%"></td>
+</tr>
+
+<tr>
+<td>Kode Unit</td>
+<td><input type="text" style="width:100%"></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>Shift / Lokasi</td>
+<td><input type="text" style="width:100%"></td>
+</tr>
+
+<tr>
+<td>HM Awal</td>
+<td><input type="number"></td>
+</tr>
+
+<tr>
+<td>HM Akhir</td>
+<td><input type="number"></td>
+</tr>
+</table>
+
+</div>
+
+<div class="section-title">
+SEBELUM PEMANASAN
+</div>
+
+<table class="inspection">
+<tr>
+<th>Pemeriksaan</th>
+<th>OK</th>
+<th>NG</th>
+<th>Catatan</th>
+</tr>
+
+<tr>
+<td>Bucket</td>
+<td><input type="radio" name="bucket"></td>
+<td><input type="radio" name="bucket"></td>
+<td><input type="text" class="note"></td>
+</tr>
+
+<tr>
+<td>Cylinder Bucket</td>
+<td><input type="radio" name="cylbucket"></td>
+<td><input type="radio" name="cylbucket"></td>
+<td><input type="text" class="note"></td>
+</tr>
+
+<tr>
+<td>Arm</td>
+<td><input type="radio" name="arm"></td>
+<td><input type="radio" name="arm"></td>
+<td><input type="text" class="note"></td>
+</tr>
+
+<tr>
+<td>Boom</td>
+<td><input type="radio" name="boom"></td>
+<td><input type="radio" name="boom"></td>
+<td><input type="text" class="note"></td>
+</tr>
+
+<tr>
+<td>Track Shoe</td>
+<td><input type="radio" name="trackshoe"></td>
+<td><input type="radio" name="trackshoe"></td>
+<td><input type="text" class="note"></td>
+</tr>
+
+<tr>
+<td>Hydraulic Oil Level</td>
+<td><input type="radio" name="hydraulic"></td>
+<td><input type="radio" name="hydraulic"></td>
+<td><input type="text" class="note"></td>
+</tr>
+
+<tr>
+<td>Engine Oil Level</td>
+<td><input type="radio" name="engineoil"></td>
+<td><input type="radio" name="engineoil"></td>
+<td><input type="text" class="note"></td>
+</tr>
+
+</table>
+
+<div class="section-title">
+SAAT PEMANASAN
+</div>
+
+<table class="inspection">
+<tr>
+<th>Pemeriksaan</th>
+<th>OK</th>
+<th>NG</th>
+<th>Catatan</th>
+</tr>
+
+<tr>
+<td>Engine Oil Pressure</td>
+<td><input type="radio" name="oilpressure"></td>
+<td><input type="radio" name="oilpressure"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>Charge Battery</td>
+<td><input type="radio" name="battery"></td>
+<td><input type="radio" name="battery"></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td>Fuel Gauge</td>
+<td><input type="radio" name="fuel"></td>
+<td><input type="radio" name="fuel"></td>
+<td><input type="text"></td>
+</tr>
+
+</table>
+
+<div class="section-title">
+CATATAN TAMBAHAN
+</div>
+
+<textarea></textarea>
+
+<div class="section-title">
+PARAF
+</div>
+
+<table class="inspection">
+<tr>
+<th>Siswa</th>
+<th>Instruktur</th>
+</tr>
+
+<tr>
+<td><input type="text" style="width:100%"></td>
+<td><input type="text" style="width:100%"></td>
+</tr>
+
+</table>
+
+<div class="buttons">
+<button onclick="window.print()">Cetak PDF</button>
+<button onclick="saveData()">Simpan Lokal</button>
+<button onclick="location.reload()">Reset</button>
+</div>
+
+</div>
+
+<script>
+function saveData(){
+    alert("Versi 1: Data berhasil disimpan di browser (fitur lengkap akan ditambahkan pada versi berikutnya).");
+}
+</script>
+
+</body>
+</html>
