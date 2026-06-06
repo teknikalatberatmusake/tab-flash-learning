@@ -1,10 +1,10 @@
-judul :CRI FUEL LINE SYSTEM.html
+judul :CRI fuel line system.html
 
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>CRI FUEL LINE SYSTEM</title>
+<title>CRI fuel line system</title>
 
 <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
@@ -32,14 +32,14 @@ body{
 <body>
 
 <div class="header">
-<h1>CRI FUEL LINE SYSTEM</h1>
-<p>Simulasi Pengukuran Alat Ukur TAB</p>
+<h1>CRI fuel line system</h1>
+<p>Simulasi Sistem TAB</p>
 </div>
 
 <div class="viewer">
 
 <embed
-src="CRI FUEL LINE SYSTEM.swf"
+src="CRI fuel line system.swf"
 width="1000"
 height="700">
 
