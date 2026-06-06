@@ -1,0 +1,49 @@
+judul :CRI FUEL LINE SYSTEM.html
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CRI FUEL LINE SYSTEM</title>
+
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+<style>
+body{
+    margin:0;
+    background:#f4f4f4;
+    font-family:Arial,sans-serif;
+    text-align:center;
+}
+
+.header{
+    background:#005baa;
+    color:white;
+    padding:15px;
+}
+
+.viewer{
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+<h1>CRI FUEL LINE SYSTEM</h1>
+<p>Simulasi Pengukuran Alat Ukur TAB</p>
+</div>
+
+<div class="viewer">
+
+<embed
+src="CRI FUEL LINE SYSTEM.swf"
+width="1000"
+height="700">
+
+</div>
+
+</body>
+</html>
